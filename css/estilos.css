@@ -1,0 +1,100 @@
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+body{
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    letter-spacing: 1.5px;
+}
+/*Estilos del header*/
+.header{
+    height: 60px;
+}
+.header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+.logo, .icon-menu{
+    margin: 5px;
+    color: #fff;
+}
+.icon-menu{
+   display: block;
+   width: 40px;
+   height: 40px;
+   font-size: 30px;
+   background: #fba919; 
+   color:black;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 5px;
+   margin-left:auto;
+   cursor: pointer;
+}
+
+/*Estilos menu*/
+.nav{
+    position:absolute;
+    top:60px;
+    left: -100%;
+    width: 100%;
+    transition: 0.4s;
+}
+.menu{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.menu__link{
+    display: block;
+    padding: 15px;
+    background:#fba919;
+    text-decoration: none;
+    color:#fff;
+}
+.menu__link: hover,.select{
+    background:white;
+    color:#fba919;
+
+}
+.mostrar{
+    left:0;
+}
+/*Estilos del banner*/
+.banner{
+    margin-top: -60px;
+    position: relative;
+    z-index: -1000;
+    margin-bottom: 20px;
+}
+.banner .contenedor{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translateX(-50%) translateY(-50%);
+    width: 100%;
+    color: #fff;
+    text-align: center;
+}
+.banner__txt{
+    display: none;
+}
+/*estilos de info*/
+.info__columna{
+    background:#fba919 ;
+    color:#fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+/*estilos de cursos*/
+.section__titulo{
+    text-align: center;
+    font-size: 40px;
+    color:#fba919;
+}
